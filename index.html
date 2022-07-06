@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        <link rel="canonical" href="https://vector.wildfirelaboratories.com/">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>WF-DOCS-VECTOR</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/darcula.min.css">
+        <link href="extra.css" rel="stylesheet">
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">WF-DOCS-VECTOR</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem active">
+                                <a href="." class="nav-link">USER GUIDE</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="bom/" class="nav-link">BOM FOR PCBs</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://wildfirelaboratories.com" class="nav-link">HOME</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="bom/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#summary" class="nav-link">SUMMARY</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#specifications" class="nav-link">SPECIFICATIONS</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#functions" class="nav-link">FUNCTIONS</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#tips-tricks" class="nav-link">TIPS / TRICKS</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#contact-support" class="nav-link">CONTACT + SUPPORT</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#warranty-info" class="nav-link">WARRANTY INFO</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><font size="7" face="Courier Prime">WL-8592 - "WEIRD VECTOR"*</font><br>
+<font size="5">REFERENCE DOCUMENTATION AND MATERIALS GUIDE</font>
+<br><br></p>
+<p><img src="vector-mkdocs.png" width="80%" height="80%">
+<br><br><br></p>
+<h1 id="summary"><em>SUMMARY</em></h1>
+<p><br>
+Weird Vector is an exploration into how many <strong>awful</strong> sounds we could wring out of an <strong>entirely passive circuit</strong>. Semiconductors (specifically transistors) are generally powered by a constant voltage source. However, interesting effects and utilities can be derived when used passively. Utility modules are generally seen as boring - we do not want to be boring. </p>
+<p>Included in this multifunction utility module are <strong>two "dirty" wavefolding VCAs, one PNP transistor XOR gate, one diode OR gate, and a dual rectifier</strong> using an infrared LED (similar to the Lotek's) as opposed to a conventional diode. </p>
+<p><br><br><br></p>
+<h1 id="specifications"><em>SPECIFICATIONS</em></h1>
+<p><br></p>
+<ul>
+<li><strong>6HP wide</strong></li>
+<li>Skiff-friendly</li>
+<li>Completely passive</li>
+<li>Completely <strong>imperfect</strong></li>
+</ul>
+<p><br><br></p>
+<h1 id="functions"><em>FUNCTIONS</em></h1>
+<p><br></p>
+<p><img src="vector-mkdocs2.png"></p>
+<p><br></p>
+<ul>
+<li>
+<p><font size="5"><strong><em>DIODE OR</em></strong></font></p>
+<p>A classic diode OR logic gate, made from standard silicon diodes - when there is ANY signal (be it a gate, trigger, or audio) on either OR 1 / OR 2, it'll be passed to OR OUT.</p>
+</li>
+</ul>
+<p><br>        </p>
+<ul>
+<li>
+<p><font size="5"><strong><em>PNP TRANSISTOR XOR</em></strong></font> </p>
+<p>BJT transistor XOR gate - signal from XOR 1 / XOR 2 will be passed to XOR OUT if there is signal on ONLY ONE of the inputs. </p>
+</li>
+</ul>
+<p><br></p>
+<ul>
+<li>
+<p><font size="5"><strong><em>DUAL INFRARED RECTIFIER</em></strong></font></p>
+<p>Two infrared LEDs acting as rectifiers - HI RECT will "chop off" the top half of a signal (think the top half of a sine wave), and LO RECT will
+cut off the bottom half. Each channel has it's own OUTPUT. </p>
+<p>NOTE!: The characteristics of the IR LED will result in a smaller / quieter signal, but more distortion / rectification - it is VERY imperfect, that's the point.</p>
+</li>
+</ul>
+<p><br>    </p>
+<ul>
+<li>
+<p><font size="5"><strong><em>NPN Transistor "VCAs"</em></strong></font></p>
+<p>Very large airquotes on VCA there - the bottom portion of the module contains two VCAs utilizing NPN bipolar junction transistors. </p>
+<p>I/O is similar to your standard VCA: IN is the input signal, CV is the control signal that dictates volume, OUT is the output. The similarities end there - the CV ctl is inverted, so higher CVs = quieter signal. In addition, the passive nature of the circuit means these are as much waveshapers as they are VCAs. As stated above, these are intentionally VERY imperfect. Do not rely on them for your 7hr Ibiza acid techno opening-for-Orbital set. But please invite me to it. </p>
+</li>
+</ul>
+<p><br><br><br>    </p>
+<h1 id="tips-tricks">TIPS / TRICKS</h1>
+<p><br></p>
+<ul>
+<li>
+<p>The rectifier is good for both cutting CV signals <em>and</em> for distorting audio. The IR LEDs are the same ones we use in our "Lotek" distortion effect and instrument, so you can trust their pedigree. </p>
+</li>
+<li>
+<p><strong>Try chaining VCAs together</strong> for interesting tremolo variations and the sort. This will also double the disgusting waveshaping. </p>
+</li>
+<li>
+<p>Our personal favorite trick - the diode OR gate can also act as an <strong>imperfect (big shocker there) 2 -&gt; 1 mixer.</strong> It will be far from evenly balanced volume wise, and there will be a bit of distortion as the signal passes the diode's forward voltage. </p>
+</li>
+<li>
+<p>As a general rule, ALL functions can be used (or should at least be tried) with <strong>both CV and audio.</strong></p>
+</li>
+</ul>
+<p><br><br><br>        </p>
+<h1 id="contact-support">CONTACT + SUPPORT</h1>
+<p><br></p>
+<p>Please do not hesitate to reach out to us with questions, comments, repair
+requests, returns, parables, assembly opcodes, and general support. You can
+reach us via:</p>
+<p>EMAIL – wildfirelaboratories@gmail.com</p>
+<p>INSTAGRAM – instagram.com/wildfire_laboratories</p>
+<p>WEBSITE – wildfirelaboratories.com</p>
+<p><br><br><br>        </p>
+<h1 id="warranty-info">WARRANTY INFO</h1>
+<p><br>
+All Wildfire Laboratories devices have a 5-month warranty from time of
+purchase. This covers manufacturing + assembly issues. Incorrect power
+connections (power supplies with wrong polarity, too much power, etc), wear
+and tear from normal use, and issues due to modifications are not covered by
+said Warranty (although you should absolutely email us with any mods you
+do).</p>
+<p>We will repair, replace, or refund depending on the circumstances. Shipping
+will be paid by the buyer.
+Thank you very much for your support, and as always, Wildfire wishes you an
+easy listening.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.3.0
+Build Date UTC : 2022-07-06 01:42:57.796751+00:00
+-->
